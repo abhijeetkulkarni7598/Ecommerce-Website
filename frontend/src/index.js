@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faHome, faSearch, faList, faArrowRight, faUser } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faHome, faSearch, faList, faArrowRight, faUser); // Add the icons you want to use
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

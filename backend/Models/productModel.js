@@ -6,6 +6,10 @@ const productSchema = new mongoose.Schema({
   price: { type: Number, required: true },
   category_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Category' },
   image_url: { type: String, required: true },
+  sizes: [{
+    size: { type: String, required: true },  
+    stock: { type: Number, required: true, default: 0 }  
+  }],
   created_at: { type: Date, default: Date.now }
 });
 

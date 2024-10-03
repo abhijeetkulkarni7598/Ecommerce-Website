@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 exports.register = async (req, res) => {
     const { name, email, password, role } = req.body;
 
-    // Validate role if necessary
+    // Validate role 
     if (role && !['admin', 'customer'].includes(role)) {
       return res.status(400).json({ message: 'Invalid role' });
     }

@@ -6,10 +6,14 @@ const productRoutes = require('./Routes/productRoutes');
 const categoryRoutes = require('./Routes/categoryRoutes');
 const cartRoutes = require('./Routes/cartRoutes');
 const orderRoutes = require('./Routes/orderRoutes');
+const cors = require('cors');
+
+
 
 
 const app = express();
 
+app.use(cors());
 // Connect to DB
 connectDB();
 

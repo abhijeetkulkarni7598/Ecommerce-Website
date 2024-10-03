@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.product-name {
+    padding-right: 50px; /* Add 20px padding to the right */
+  }
+  
+  .product-description {
+    padding-right: 50px; /* Add 20px padding to the right */
+  }
+  .description-container{
+    background-color: rgb(53, 52, 52);
+  }
+  .description-box {
+    white-space: pre-wrap; /* Ensures the description respects line breaks */
+    word-wrap: break-word; /* Ensures long words break and don't overflow */
+    line-height: 1.6; /* Adjusts the line spacing for better readability */
+    width:400px;
+  }
